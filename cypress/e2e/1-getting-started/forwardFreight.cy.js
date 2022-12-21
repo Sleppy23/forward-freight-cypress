@@ -46,28 +46,26 @@ describe('example to-do app', () => {
     .should('be.visible')
     .type('Test by Hector making sure website form works!')
 
+  }),
+
+  it('should display social media logos',() => {
+
+    cy.get('.dmSocialInstagram')
+    .should('be.visible')
+
+    cy.get('.dmSocialLinkedin')
+    .should('be.visible')
+
+    cy.get('.dmSocialFacebook')
+    .should('be.visible')
+
+    cy.get('.dmSocialTwitter')
+    .should('be.visible')
+
+    cy.get('.dmSocialEmail')
+    .should('be.visible')
+   
   })
-
-
-  // it('should fill out connect today form'), () => {
-  //   // cy.get('[name="dmform-0"]')
-  //   // .should('be.visible')
-  //   // .type('John Doe')
-  //     // cy.get('[name="dmform-0"]').click();
-  //   // cy.get('[name="dmform-0"]').type('Robert');
-  //   // cy.get('#912489313').click();
-  //   // cy.get('#912489313').type('Robert');
-
-  // }
-
-  // it('should fill out Connect Today', () => {
-  
-  //   // const name = '#1912489313'
-
-  //   // cy.get(name).type('Robert Sleppy')
-  //   cy.get('[name="dmform-0"]').click();
-
-  // })
 
 })
   
